@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ForecastViewController : UITableViewController
 
+@property (strong, nonatomic) NSDictionary *ForecastData;
+
 @end
 
 NS_ASSUME_NONNULL_END

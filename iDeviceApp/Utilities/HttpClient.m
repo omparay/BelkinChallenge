@@ -30,10 +30,12 @@
             NSURLSessionDataTask *task = [[NSURLSession sharedSession]
                                           dataTaskWithRequest:request
                                           completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-                                              if (error != nil){
+                                              if ((error != nil) && (response != nil)){
                                                   [self.delegate requestFailedWithResponse:response andError:error];
                                               } else {
-                                                  [self.delegate requestSucceededWithResponse:response andData:data];
+                                                  if ((response != nil) && (data != nil)){
+                                                      [self.delegate requestSucceededWithResponse:response andData:data];
+                                                  }
                                               }
                                           }];
             [task resume];
