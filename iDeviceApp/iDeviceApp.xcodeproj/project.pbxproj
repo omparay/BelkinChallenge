@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A768268222C50ADA002D168B /* NSDictionary+OpenWeatherData.m in Sources */ = {isa = PBXBuildFile; fileRef = A768268122C50ADA002D168B /* NSDictionary+OpenWeatherData.m */; };
 		A79AB91622C4C5D800EB5BAB /* iDeviceAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BFB70822C4AA36001C454A /* iDeviceAppUITests.m */; };
 		A7BFB6E622C4AA36001C454A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BFB6E522C4AA36001C454A /* AppDelegate.m */; };
 		A7BFB6EC22C4AA36001C454A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7BFB6EA22C4AA36001C454A /* Main.storyboard */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A768268022C50ADA002D168B /* NSDictionary+OpenWeatherData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+OpenWeatherData.h"; sourceTree = "<group>"; };
+		A768268122C50ADA002D168B /* NSDictionary+OpenWeatherData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+OpenWeatherData.m"; sourceTree = "<group>"; };
 		A7BFB6E122C4AA36001C454A /* iDeviceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDeviceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7BFB6E422C4AA36001C454A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A7BFB6E522C4AA36001C454A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -152,6 +155,8 @@
 			children = (
 				A7BFB71F22C4AC92001C454A /* HttpClient.h */,
 				A7BFB72022C4AC92001C454A /* HttpClient.m */,
+				A768268022C50ADA002D168B /* NSDictionary+OpenWeatherData.h */,
+				A768268122C50ADA002D168B /* NSDictionary+OpenWeatherData.m */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -289,6 +294,7 @@
 				A7BFB72122C4AC92001C454A /* HttpClient.m in Sources */,
 				A7BFB71E22C4AB9D001C454A /* ForecastViewController.m in Sources */,
 				A7BFB71B22C4AB82001C454A /* TodayViewController.m in Sources */,
+				A768268222C50ADA002D168B /* NSDictionary+OpenWeatherData.m in Sources */,
 				A7BFB6F422C4AA36001C454A /* main.m in Sources */,
 				A7BFB71822C4AB36001C454A /* SearchViewController.m in Sources */,
 				A7BFB6E622C4AA36001C454A /* AppDelegate.m in Sources */,

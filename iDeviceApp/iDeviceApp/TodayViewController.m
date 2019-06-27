@@ -8,9 +8,12 @@
 
 #import "TodayViewController.h"
 #import "ForecastViewController.h"
+#import "NSDictionary+OpenWeatherData.h"
 
 @interface TodayViewController ()
-
+{
+    NSDictionary *todayForecast;
+}
 @end
 
 @implementation TodayViewController
@@ -24,6 +27,8 @@
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     if (self.ForecastData != nil){
+        todayForecast = [self.ForecastData todayForecast];
+        NSLog(@"Todays Forecast:\n%@",todayForecast);
         [self.tableView reloadData];
     }
 }
