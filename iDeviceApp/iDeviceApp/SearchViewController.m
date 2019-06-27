@@ -7,7 +7,7 @@
 //
 
 #import "SearchViewController.h"
-#import "ForecastViewController.h"
+#import "TodayViewController.h"
 
 @interface SearchViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *textField;
@@ -39,7 +39,7 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"toToday"]){
-        ForecastViewController *controller = (ForecastViewController *)segue.destinationViewController;
+        TodayViewController *controller = (TodayViewController *)segue.destinationViewController;
         controller.ForecastData = self.results;
     }
 }
@@ -59,7 +59,7 @@
 }
 
 - (void)startForecastFor:(NSString *)city{
-    if (city != nil) {
+    if (![city isEqualToString:@""]) {
         [self searchAnimation:YES];
         [self.client getForeCastFor:city];
     }
@@ -116,9 +116,7 @@
         self.textField.text = nil;
     }
     if (sender == self.searchButton){
-        if (self.textField.text != nil) {
-
-        }
+        [self.textField resignFirstResponder];
     }
 }
 
