@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HttpClient.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SearchViewController : UIViewController <UITextFieldDelegate>
+@interface SearchViewController : UIViewController <UITextFieldDelegate,HttpClientProtocol>
 
 @end
 

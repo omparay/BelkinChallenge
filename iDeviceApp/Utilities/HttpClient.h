@@ -16,8 +16,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)requestSucceededWithResponse:(NSURLResponse *)response andData:(NSData *)data;
 - (void)requestFailedWithResponse:(NSURLResponse *)response andError:(NSError *)error;
 
-@optional
-
 @end
 
 @interface HttpClient : NSObject
