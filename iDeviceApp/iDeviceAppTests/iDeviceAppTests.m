@@ -7,8 +7,11 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "HttpClient.h"
 
-@interface iDeviceAppTests : XCTestCase
+@interface iDeviceAppTests : XCTestCase <HttpClientProtocol>
+
+@property (strong,nonatomic) HttpClient *client;
 
 @end
 

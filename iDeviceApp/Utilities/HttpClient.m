@@ -8,6 +8,10 @@
 
 #import "HttpClient.h"
 
+@interface HttpClient ()
+
+@end
+
 @implementation HttpClient
 
 @end

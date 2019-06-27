@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A79AB91622C4C5D800EB5BAB /* iDeviceAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BFB70822C4AA36001C454A /* iDeviceAppUITests.m */; };
 		A7BFB6E622C4AA36001C454A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BFB6E522C4AA36001C454A /* AppDelegate.m */; };
 		A7BFB6EC22C4AA36001C454A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7BFB6EA22C4AA36001C454A /* Main.storyboard */; };
 		A7BFB6EE22C4AA36001C454A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7BFB6ED22C4AA36001C454A /* Assets.xcassets */; };
 		A7BFB6F122C4AA36001C454A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7BFB6EF22C4AA36001C454A /* LaunchScreen.storyboard */; };
 		A7BFB6F422C4AA36001C454A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BFB6F322C4AA36001C454A /* main.m */; };
 		A7BFB6FE22C4AA36001C454A /* iDeviceAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BFB6FD22C4AA36001C454A /* iDeviceAppTests.m */; };
-		A7BFB70922C4AA36001C454A /* iDeviceAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BFB70822C4AA36001C454A /* iDeviceAppUITests.m */; };
 		A7BFB71822C4AB36001C454A /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BFB71722C4AB36001C454A /* SearchViewController.m */; };
 		A7BFB71B22C4AB82001C454A /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BFB71A22C4AB82001C454A /* TodayViewController.m */; };
 		A7BFB71E22C4AB9D001C454A /* ForecastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BFB71D22C4AB9D001C454A /* ForecastViewController.m */; };
@@ -308,7 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7BFB70922C4AA36001C454A /* iDeviceAppUITests.m in Sources */,
+				A79AB91622C4C5D800EB5BAB /* iDeviceAppUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
