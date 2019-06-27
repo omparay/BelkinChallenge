@@ -15,7 +15,7 @@
 @implementation HttpClient
 
 - (void)getForeCastFor:(NSString *)locale{
-    NSString *urlString = @"http://api.openweathermap.org/data/2.5/forecast?appid=5d5fb2abfc152ac8380b7c62c2b0e8cd&q=";
+    NSString *urlString = @"http://api.openweathermap.org/data/2.5/forecast?appid=5d5fb2abfc152ac8380b7c62c2b0e8cd&units=imperial&q=";
     urlString = [urlString stringByAppendingString:[locale stringByAddingPercentEncodingWithAllowedCharacters:NSCharacterSet.URLQueryAllowedCharacterSet]];
     NSURL *url = [[NSURL alloc] initWithString:urlString];
 

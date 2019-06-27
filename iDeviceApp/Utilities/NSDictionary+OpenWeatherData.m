@@ -15,7 +15,7 @@
     NSMutableDictionary *result = [NSMutableDictionary dictionary];
 
     for (NSDictionary *json in list) {
-        NSString *itemDate = (NSString *)[json valueForKey:@"dt_txt"];
+        NSString *itemDate = [json valueForKey:@"dt_txt"];
         NSArray *components = [itemDate componentsSeparatedByString:@" "];
         NSString *component0 = components[0];
 

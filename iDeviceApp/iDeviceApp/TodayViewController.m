@@ -62,23 +62,26 @@
         switch (indexPath.row) {
             case 0:
                 titleLabel.text = @"City Name";
-                infoLabel.text = [self.ForecastData valueForKeyPath:@"city.name"];
+                infoLabel.text = [NSString stringWithFormat:@"%@",[self.ForecastData valueForKeyPath:@"city.name"]];
                 break;
-            case 1:
+            case 1:{
                 titleLabel.text = @"Weather";
-                infoLabel.text = [self.ForecastData valueForKeyPath:@""];
+                NSArray *array = (NSArray *)[todayForecast valueForKeyPath:@"weather"];
+                NSDictionary *first = array[0];
+                infoLabel.text = [NSString stringWithFormat:@"%@",[first valueForKeyPath:@"main"]];
+            }
                 break;
             case 2:
                 titleLabel.text = @"Temperature";
-                infoLabel.text = [self.ForecastData valueForKeyPath:@""];
+                infoLabel.text = [NSString stringWithFormat:@"%@",[todayForecast valueForKeyPath:@"main.temp"]];
                 break;
             case 3:
                 titleLabel.text = @"Humidity";
-                infoLabel.text = [self.ForecastData valueForKeyPath:@""];
+                infoLabel.text = [NSString stringWithFormat:@"%@",[todayForecast valueForKeyPath:@"main.humidity"]];
                 break;
             case 4:
                 titleLabel.text = @"Wind";
-                infoLabel.text = [self.ForecastData valueForKeyPath:@""];
+                infoLabel.text = [NSString stringWithFormat:@"%@",[todayForecast valueForKeyPath:@"wind.speed"]];
                 break;
         }
         return cell;
